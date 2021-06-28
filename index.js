@@ -49,7 +49,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 client.connect(err => {
 
-    const eventCollection = client.db("mosque").collection("events");
+    const adminCollection = client.db("ABC_E-commerce").collection("admins");
 
 
     app.post('/sendEmail', (req, res) => {
@@ -80,6 +80,8 @@ client.connect(err => {
         })
       })
     
+
+      
 
 
 });
